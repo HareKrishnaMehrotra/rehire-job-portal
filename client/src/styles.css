@@ -1,0 +1,47 @@
+/* Basic Body Styling */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Animations for Job Cards */
+@keyframes slide-left-right {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right-left {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left-right {
+  animation: slide-left-right 1.5s ease forwards;
+}
+
+.animate-slide-right-left {
+  animation: slide-right-left 1.5s ease forwards;
+}
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
